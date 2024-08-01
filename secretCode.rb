@@ -15,6 +15,3 @@ class SecretCode
         puts "#{@array_code_display.join(' ')}"
     end
 end
-
-secretcode = SecretCode.new
-secretcode.code_display

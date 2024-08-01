@@ -14,4 +14,3 @@ class Board
 
 end
 
-board = Board.new
