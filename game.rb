@@ -39,6 +39,7 @@ class Game
                 @array_help_user.push("grey")
             end
         end
+        puts "compare_array result: #{@array_help_user}" # Ajouté pour le débogage
         @array_help_user
     end
         

@@ -39,11 +39,19 @@ class Board
         end
     end
 
+    def extract_color(colored_dot)
+        # This method should extract the color from the colored dot
+        colored_dot.scan(/color: (.*?)[,}]/).flatten.first
+    end
+
+
     def winner?
         black_dot = '.'.colorize(color: :black)
-        @board_help.any? do |row|
+        winner = @board_help.any? do |row|
             row.all? {|dot| dot == black_dot}
         end
+        puts "winner? check: #{winner}" # Ajouté pour le débogage
+        winner
     end
 
     def array_display (array)
