@@ -5,7 +5,7 @@ class Game
     def ask_user_color
         @color_choose_by_user = Array.new(4)
 
-        puts "Choose 4 colors between: ['blue', 'red', 'green', 'yellow', 'brown', 'grey']"
+        puts "Choose 4 colors between: ['blue', 'red', 'green', 'yellow', 'brown', 'orange']"
         puts "Choose your first color"
         first_color = gets.chomp
         puts "Choose your second color"
@@ -16,7 +16,7 @@ class Game
         fourth_color = gets.chomp
         
         @color_choose_by_user = [first_color,second_color,third_color,fourth_color]
-        puts "here the array choose bu user#{@color_choose_by_user}"
+        puts "here the array choose by user#{@color_choose_by_user}"
         return @color_choose_by_user
         
     end
@@ -41,6 +41,7 @@ class Game
         end
         @array_help_user
     end
+        
 
     #def compare_array (array1, array2)
     #    @array_help_user = Array.new
